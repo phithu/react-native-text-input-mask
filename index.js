@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Input } from 'react-native-elements';
 import {
   TextInput,
   findNodeHandle,
@@ -47,7 +47,7 @@ export default class TextInputMask extends Component {
   }
 
   render() {
-    return (<TextInput
+    return (<Input
       {...this.props}
       value={undefined}
       ref={ref => {
